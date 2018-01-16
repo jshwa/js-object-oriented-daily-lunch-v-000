@@ -108,9 +108,7 @@ class Employer {
     let del = [];
     this.employees().map(function (employee) {
       for(const delivery of employee.deliveries) {
-        if (delivery.customerId === employee.id) {
           del.push(delivery)
-        }
       }
     })
     return del
